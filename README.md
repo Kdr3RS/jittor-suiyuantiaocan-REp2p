@@ -33,12 +33,13 @@ pip install -r requirements.txt
 #### 数据集
 本项目使用的数据集由第二届计图人工智能挑战赛-风景图片生成赛题提供，[下载地址](https://www.educoder.net/competitions/index/Jittor-3).
 将数据下载解压到 `<root>/Data/` 下,训练数据存放于`<root>/Data/train` ，测试数据存放于`<root>/Data/val`。
+
 #### 预训练模型
-预训练模型模型下载地址为 [点击此处](https://drive.google.com/file/d/1MhSOqBX0HAQBgcrFYGcP_ZEquW7TSqQr/view?usp=sharing)
+本项目提供基于风景图片数据集训练好的参数模型，预训练模型模型下载地址为 [下载地址](https://drive.google.com/file/d/1MhSOqBX0HAQBgcrFYGcP_ZEquW7TSqQr/view?usp=sharing)
 ，下载后放入目录 `<root>/result/saved_models` 下。
 
 ## 数据预处理
-
+imgarg.py提供几种基本的数据增强方法对目标数据集进行扩充。
 执行以下命令对数据预处理：
 ```
 python imgarg.py ./Data/train/imgs
